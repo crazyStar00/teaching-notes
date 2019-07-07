@@ -1114,6 +1114,7 @@ public class PageService {
         if(page <=0){
             page = 1;
         }
+        //为了适应mongodb的接口将页码减1
         page = page -1;
         if(size<=0){
             size = 10;
